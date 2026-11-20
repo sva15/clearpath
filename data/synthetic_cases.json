@@ -1,0 +1,329 @@
+[
+ {
+  "label": "Clean young applicant",
+  "app": {
+   "full_name": "Asha Rao",
+   "age": 29,
+   "cover_amount": 2500000,
+   "health_answers": {
+    "diabetes": false
+   }
+  },
+  "docs": {
+   "id_proof": {
+    "doc_type": "id_proof",
+    "name": "Asha Rao",
+    "issued_on": null,
+    "expires_on": "2030-01-01",
+    "mentions": []
+   },
+   "address_proof": {
+    "doc_type": "address_proof",
+    "name": "Asha Rao",
+    "issued_on": "2026-10-01",
+    "expires_on": null,
+    "mentions": []
+   }
+  }
+ },
+ {
+  "label": "Ravi - 50y, 1.5cr, diabetic, old report + short name",
+  "app": {
+   "full_name": "Ravi Kumar",
+   "age": 50,
+   "cover_amount": 15000000,
+   "health_answers": {
+    "diabetes": true
+   }
+  },
+  "docs": {
+   "id_proof": {
+    "doc_type": "id_proof",
+    "name": "Ravi K.",
+    "issued_on": null,
+    "expires_on": "2031-05-01",
+    "mentions": []
+   },
+   "address_proof": {
+    "doc_type": "address_proof",
+    "name": "Ravi Kumar",
+    "issued_on": "2026-09-15",
+    "expires_on": null,
+    "mentions": []
+   },
+   "income_proof": {
+    "doc_type": "income_proof",
+    "name": "Ravi Kumar",
+    "issued_on": "2026-04-01",
+    "expires_on": null,
+    "mentions": []
+   },
+   "medical_exam_report": {
+    "doc_type": "medical_exam_report",
+    "name": "Ravi Kumar",
+    "issued_on": "2026-10-20",
+    "expires_on": null,
+    "mentions": [
+     "diabetes"
+    ]
+   },
+   "doctor_report": {
+    "doc_type": "doctor_report",
+    "name": "Ravi Kumar",
+    "issued_on": "2026-02-10",
+    "expires_on": null,
+    "mentions": [
+     "diabetes"
+    ]
+   }
+  }
+ },
+ {
+  "label": "Expired ID",
+  "app": {
+   "full_name": "Meera Iyer",
+   "age": 34,
+   "cover_amount": 3000000,
+   "health_answers": {}
+  },
+  "docs": {
+   "id_proof": {
+    "doc_type": "id_proof",
+    "name": "Meera Iyer",
+    "issued_on": null,
+    "expires_on": "2025-12-31",
+    "mentions": []
+   },
+   "address_proof": {
+    "doc_type": "address_proof",
+    "name": "Meera Iyer",
+    "issued_on": "2026-11-01",
+    "expires_on": null,
+    "mentions": []
+   }
+  }
+ },
+ {
+  "label": "Health contradiction",
+  "app": {
+   "full_name": "Karan Shah",
+   "age": 47,
+   "cover_amount": 6000000,
+   "health_answers": {
+    "diabetes": false,
+    "hypertension": false
+   }
+  },
+  "docs": {
+   "id_proof": {
+    "doc_type": "id_proof",
+    "name": "Karan Shah",
+    "issued_on": null,
+    "expires_on": "2029-01-01",
+    "mentions": []
+   },
+   "address_proof": {
+    "doc_type": "address_proof",
+    "name": "Karan Shah",
+    "issued_on": "2026-10-10",
+    "expires_on": null,
+    "mentions": []
+   },
+   "income_proof": {
+    "doc_type": "income_proof",
+    "name": "Karan Shah",
+    "issued_on": "2026-06-01",
+    "expires_on": null,
+    "mentions": []
+   },
+   "medical_exam_report": {
+    "doc_type": "medical_exam_report",
+    "name": "Karan Shah",
+    "issued_on": "2026-11-05",
+    "expires_on": null,
+    "mentions": [
+     "hypertension"
+    ]
+   }
+  }
+ },
+ {
+  "label": "Wrong document in slot",
+  "app": {
+   "full_name": "Neha Gupta",
+   "age": 31,
+   "cover_amount": 2000000,
+   "health_answers": {}
+  },
+  "docs": {
+   "id_proof": {
+    "doc_type": "id_proof",
+    "name": "Neha Gupta",
+    "issued_on": null,
+    "expires_on": "2032-01-01",
+    "mentions": []
+   },
+   "address_proof": {
+    "doc_type": "income_proof",
+    "name": "Neha Gupta",
+    "issued_on": "2026-10-01",
+    "expires_on": null,
+    "mentions": []
+   }
+  }
+ },
+ {
+  "label": "Missing everything optional",
+  "app": {
+   "full_name": "Vikram Singh",
+   "age": 55,
+   "cover_amount": 12000000,
+   "health_answers": {
+    "heart_disease": true
+   }
+  },
+  "docs": {
+   "id_proof": {
+    "doc_type": "id_proof",
+    "name": "Vikram Singh",
+    "issued_on": null,
+    "expires_on": "2030-01-01",
+    "mentions": []
+   }
+  }
+ },
+ {
+  "label": "Old address proof",
+  "app": {
+   "full_name": "Pooja Nair",
+   "age": 26,
+   "cover_amount": 1500000,
+   "health_answers": {}
+  },
+  "docs": {
+   "id_proof": {
+    "doc_type": "id_proof",
+    "name": "Pooja Nair",
+    "issued_on": null,
+    "expires_on": "2033-01-01",
+    "mentions": []
+   },
+   "address_proof": {
+    "doc_type": "address_proof",
+    "name": "Pooja Nair",
+    "issued_on": "2026-03-01",
+    "expires_on": null,
+    "mentions": []
+   }
+  }
+ },
+ {
+  "label": "Clean high cover",
+  "app": {
+   "full_name": "Arjun Menon",
+   "age": 40,
+   "cover_amount": 8000000,
+   "health_answers": {}
+  },
+  "docs": {
+   "id_proof": {
+    "doc_type": "id_proof",
+    "name": "Arjun Menon",
+    "issued_on": null,
+    "expires_on": "2031-01-01",
+    "mentions": []
+   },
+   "address_proof": {
+    "doc_type": "address_proof",
+    "name": "Arjun Menon",
+    "issued_on": "2026-11-01",
+    "expires_on": null,
+    "mentions": []
+   },
+   "income_proof": {
+    "doc_type": "income_proof",
+    "name": "Arjun Menon",
+    "issued_on": "2026-08-01",
+    "expires_on": null,
+    "mentions": []
+   }
+  }
+ },
+ {
+  "label": "Name with middle name",
+  "app": {
+   "full_name": "Priya Sharma",
+   "age": 38,
+   "cover_amount": 4000000,
+   "health_answers": {}
+  },
+  "docs": {
+   "id_proof": {
+    "doc_type": "id_proof",
+    "name": "Priya R. Sharma",
+    "issued_on": null,
+    "expires_on": "2030-01-01",
+    "mentions": []
+   },
+   "address_proof": {
+    "doc_type": "address_proof",
+    "name": "Priya Sharma",
+    "issued_on": "2026-10-20",
+    "expires_on": null,
+    "mentions": []
+   }
+  }
+ },
+ {
+  "label": "Hypertensive, all good",
+  "app": {
+   "full_name": "Suresh Babu",
+   "age": 46,
+   "cover_amount": 5000000,
+   "health_answers": {
+    "hypertension": true
+   }
+  },
+  "docs": {
+   "id_proof": {
+    "doc_type": "id_proof",
+    "name": "Suresh Babu",
+    "issued_on": null,
+    "expires_on": "2030-01-01",
+    "mentions": []
+   },
+   "address_proof": {
+    "doc_type": "address_proof",
+    "name": "Suresh Babu",
+    "issued_on": "2026-10-01",
+    "expires_on": null,
+    "mentions": []
+   },
+   "income_proof": {
+    "doc_type": "income_proof",
+    "name": "Suresh Babu",
+    "issued_on": "2026-07-01",
+    "expires_on": null,
+    "mentions": []
+   },
+   "medical_exam_report": {
+    "doc_type": "medical_exam_report",
+    "name": "Suresh Babu",
+    "issued_on": "2026-10-15",
+    "expires_on": null,
+    "mentions": [
+     "hypertension"
+    ]
+   },
+   "doctor_report": {
+    "doc_type": "doctor_report",
+    "name": "Suresh Babu",
+    "issued_on": "2026-09-01",
+    "expires_on": null,
+    "mentions": [
+     "hypertension"
+    ]
+   }
+  }
+ }
+]
