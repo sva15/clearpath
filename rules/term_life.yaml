@@ -1,0 +1,26 @@
+# SafeLife term-life underwriting requirement rules (FICTIONAL, simplified)
+product: term_life
+always:
+  - id_proof
+  - address_proof
+rules:
+  - id: high_cover_income
+    when: {cover_amount_gte: 5000000}        # >= Rs 50 lakh
+    require: [income_proof]
+    reason: "Cover above Rs 50 lakh needs proof of income."
+  - id: age_or_high_cover_medical
+    when_any:
+      - {age_gte: 45}
+      - {cover_amount_gte: 10000000}         # >= Rs 1 crore
+    require: [medical_exam_report]
+    reason: "Age 45+ or cover of Rs 1 crore+ needs a medical exam."
+  - id: declared_condition
+    when: {any_health_yes: [diabetes, heart_disease, hypertension]}
+    require: [doctor_report]
+    reason: "A declared health condition needs a recent doctor's report."
+documents:
+  id_proof:            {label: "ID proof", max_age_days: null, must_be_valid: true}
+  address_proof:       {label: "Address proof", max_age_days: 90}
+  income_proof:        {label: "Income proof", max_age_days: 365}
+  medical_exam_report: {label: "Medical exam report", max_age_days: 180}
+  doctor_report:       {label: "Doctor's report", max_age_days: 180}
